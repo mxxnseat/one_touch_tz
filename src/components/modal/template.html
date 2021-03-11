@@ -1,0 +1,10 @@
+<div class="modal-wrapper" v-show="show">
+    <div class="modal">
+        <div class="modal__close" @click="close">&times;</div>
+
+        <div class="modal__contact_name">Modified name: {{name}}</div>
+        <div class="modal__contact_value">Modified phone: {{phoneNum}}</div>
+        <input type="text" class="modal__contact_input" placeholder="change phone number" v-model="phoneNum" />
+        <button class="btn" @click="changePhone" >Change phone</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.contacts{
+    margin-top: 30px;
+}
+.contact__item{
+    display: flex;
+    margin-top: 10px;
+    padding: 4px 0;
+    max-width: 350px;
+    border-bottom: 1px solid red;
+}
+.contact__value{
+    width: 100%;
+    max-width: 170px;
+}
+.contact__modified{
+    margin-left: auto;
+    cursor: pointer;
+}
+.contact__add{
+    margin-bottom: 30px;
+}

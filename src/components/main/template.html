@@ -1,0 +1,33 @@
+<div class="profile" v-if="GET_USER">
+    <modal ref="modal"/>
+    <div class="login">Your login: {{GET_USER.login}}</div>
+    <div class="contacts">
+        <div class="contact__add">
+            <input type="text" placeholder="Name" v-model="addForm.name" />
+            <input type="text" placeholder="Phone Number" v-model="addForm.phone" />
+            <button class="btn" @click="addContact">Add contact</button>
+        </div>
+        Your contacts:
+        {{GET_USER.contacts.length ? "" : "empty"}}
+        <div v-for="user in GET_USER.contacts" class="contact__item">
+            <b class="contact__value">{{user.tel}}</b>
+            <div class="contact__delete contact__modified" @click="removePhone(GET_USER.login, user)">Delete</div>
+            <div class="contact__change contact__modified" @click="openModal(user)">Change</div>
+        </div>
+    </div>
+</div>
+
+<div class="form" v-else>
+
+    <label class="form__label">
+        Login:
+        <input type="text" class="form__input" id="login" v-model="login" />
+    </label>
+    <label class="form__label">
+        Password:
+        <input type="password" class="form__input" id="password" v-model="password" />
+    </label>
+
+
+    <button class="btn" @click="sendForm">Sign in</button>
+</div>

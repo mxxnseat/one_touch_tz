@@ -1,0 +1,32 @@
+    [
+        {
+            "id": 1,
+            "login": "admin",
+            "password": "1234",
+            "phone_num": "56663214",
+            "contacts": [
+                {"name": "toren", "tel": "612414"},
+                {"name": "yori", "tel": "612234612"}
+            ]
+        },
+        {
+            "id": 2,
+            "login": "yori",
+            "password": "1234",
+            "phone_num": "612234612",
+            "contacts": [
+                {"name": "admin", "tel": "56663214"},
+                {"name": "toren", "tel": "612414"}
+            ]
+        },
+        {
+            "id": 3,
+            "login": "toren",
+            "password": "1234",
+            "phone_num": "612414",
+            "contacts": [
+                {"name": "admin", "tel": "56663214"},
+                {"name": "yori", "tel": "612234612"}
+            ]
+        }
+    ]

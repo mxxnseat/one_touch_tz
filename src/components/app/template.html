@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <nav class="navigation">
+        <router-link to="/" class="navigation__link">{{ GET_USER ? "account" : "sign in" }}</router-link>
+        <router-link to="/signup" class="navigation__link" v-show="!GET_USER">sign up</router-link>
+        <div class="navigation__link exit" @click="exit" v-show="GET_USER">exit</div>
+    </nav>
+    <router-view />
+    
+</div>
